@@ -9,7 +9,17 @@
   </head>
   <body>
     <h1> Skeleton_craft's Stat Generator </h1> 
-    <hr /> 
+    <hr />
+    <div id = "frm-wraper"> 
+      <label for="Dice_method">choose a method : </label>
+      <select name="dmem" id="Dice_method">
+        <option value="3d6k2">3 - 6 sided dice and keep 2  </option>
+        <option value="3d6">3 - 6 sided dice keep them all </option>
+        <option value="4d6k3">4 - 6 sided dice keep 3</option>
+        <!--<option value="4d6k2">Audi</option>-->
+      </select>
+    </div>
+    <hr/>  
     <div id = output> </div> 
     <hr/>
     <button onclick="rollStats()"> generate new stats </button> 
