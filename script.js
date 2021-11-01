@@ -31,14 +31,15 @@ function makeStat(rolls, discard){
 function rollStats(){ 
   let diemeth = document.getElementById("Dice_method"); 
   let el = document.getElementById("output"); 
-  el.innerHTML = "";
   diemeth = diemeth.value; 
   for(let x = 0; x < 6; x++){ 
     let stat = makeStat (3,true); 
-    if(diemeth == )
+    if(diemeth == "3d6" ){
+      stat = makeStat (3,false);
+    }
+    if(diemeth == "4d6k3"){
+      stat = makeStat(4,true)
+    }
     el.innerHTML += ("<p> stat " + (x+1) + " : " + stat + "</p>") 
   }
 }
-/*window.addEventListener('DOMContentLoaded', (event) => {
-  rollStats(); 
-});*/
